@@ -1,0 +1,12 @@
+{
+  "name": "HopiApp",
+  "displayName": "HopiApp",
+  "expo": {
+    "name": "HopiApp",
+    "slug": "HopiApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
