@@ -1,8 +1,22 @@
 import { registerRootComponent } from 'expo';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
 import App from './App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Karta from   './Karta';
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in the Expo client or in a native build,
-// the environment is set up appropriately
-registerRootComponent(App);
+
+ReactDOM.render(
+  (
+      <Router>
+              <Switch>
+                  {/* <Route exact path="/Karta" component={Karta}/> */}
+                  <App></App>
+              </Switch>
+      </Router>
+  ),
+  document.getElementById('root')
+);
+
+

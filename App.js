@@ -42,7 +42,7 @@ export default function App() {
             </TouchableOpacity>
 
             <TouchableOpacity v> 
-              <img  style={{height:'3rem' , width:'3rem'}} src={require('./src/GatronomiaIcon.png')} />
+              <img  style={{height:'3rem' , width:'3rem', marginLeft:'13px'}} src={require('./src/GatronomiaIcon.png')} />
               <Text style={styles.TextMenu}>Gastronomia</Text>
             </TouchableOpacity>
             
