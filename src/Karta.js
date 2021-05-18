@@ -2,66 +2,22 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import {Link} from 'react-router-dom';
-import './src/index.css';
 
 
 
 
-export default function App() {
+export default function Karta() {
   return (
     <View style={styles.container}>
-      <View style={styles.Header}>
-      <img  style={{height:'4rem'}} src={require('./src/logo.png')} />
-      </View>
+      
 
       <View style={styles.Section}>
-        <View style={{flexDirection:'row', marginBottom:'1rem'}}>
-          <img  style={{height:'2.5rem'}} src={require('./src/TicketIcon.png')} />
-          <Text style={styles.textComprar}> COMPRE SEU {'\n'} PASSAPORTE!</Text>
-          <TouchableOpacity style={styles.btnComprar}> 
-            <Text style={styles.textBtnComprar}>COMPRAR</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={styles.MenuSection}>
-            <TouchableOpacity style={styles.btnMenu}> 
-              <img  style={{height:'3rem', width:'3rem'}} src={require('./src/AtracoesIcon.png')} />
-              <Text style={styles.TextMenu}>Atrações</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.btnMenu}> 
-              <img  style={{height:'3rem' , width:'3rem'}} src={require('./src/ServiceIcon.png')} />
-              <Text style={styles.TextMenu}>Serviços</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.btnMenu}> 
-              <img  style={{height:'3rem' , width:'3rem'}} src={require('./src/DuvidaIcon.png')} />
-              <Text style={styles.TextMenu}>Duvidas</Text>
-            </TouchableOpacity>
-        </View>
-
-        <View style={styles.MenuSection}>
-            <TouchableOpacity style={styles.btnMenu}> 
-              <img  style={{height:'3rem' , width:'3rem'}} src={require('./src/HopiNiverIcon.png')} />
-              <Text style={styles.TextMenu}>Hopi Niver</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity v> 
-              <img  style={{height:'3rem' , width:'3rem', marginLeft:'13px'}} src={require('./src/GatronomiaIcon.png')} />
-              <Text style={styles.TextMenu}>Gastronomia</Text>
-            </TouchableOpacity>
-            
-            <TouchableOpacity style={styles.btnMenu}> 
-              <img  style={{height:'3rem' , width:'3rem'}} src={require('./src/LocationIcon.png')} />
-              <Text style={styles.TextMenu}>Localização</Text>
-            </TouchableOpacity>
-        </View>
+        aa
         
       </View>
 
       <View style={styles.SectionImage}>
-        <View>
-          <img  style={{height:'9.3rem', borderRadius:'2rem'}} src={require('./src/CriançaGratis.jpg')} />
-        </View>
+        
         
       </View>
       
@@ -69,22 +25,23 @@ export default function App() {
         <Link to="/Karta">
           <TouchableOpacity style={styles.btnFooter}>  
           
-          <img id="icon-underline"  style={{height:'1.9rem'}} src={require('./src/MapsIcon.png')} />
-
+          <img id="icon-underline"  style={{height:'1.9rem'}} src={require('../src/MapsIcon.png')} />
+ 
           <Text>Karta</Text>
           </TouchableOpacity>
           </Link>
           
           
+
           <Link to="/App">
           <TouchableOpacity style={styles.btnFooterActive}>
-            <img  style={{height:'2rem'}} src={require('./src/HomeIcon.png')} />
+            <img  style={{height:'2rem'}} src={require('../src/HomeIcon.png')} />
             <Text style={{color:'#fff'}}>Home</Text>
           </TouchableOpacity>
           </Link>
 
           <TouchableOpacity style={styles.btnFooter}>
-          <img  style={{height:'1.8rem'}} src={require('./src/CalendarIcon.png')} />
+          <img  style={{height:'1.8rem'}} src={require('../src/CalendarIcon.png')} />
           <Text>Calendário</Text>
           </TouchableOpacity>
       </View>
