@@ -6,19 +6,19 @@ import {Link} from 'react-router-dom';
 
 
 
-export default function Karta() {
+export default function Calendario() {
   return (
     <View style={styles.container}>
       
 
-      {/* <View style={styles.Section}>
-        <Text style={styles.SectionText}>CONFIRA O MAPA DO</Text>
-        <Text style={styles.SectionText2}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
+      <View style={styles.Section}>
+        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
+        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
         
-      </View> */}
+      </View>
 
       <View style={styles.SectionImage}>
-        <img  style={{height:'41.8rem'}} src={require('../src/karta.jpg')} />
+        <img  style={{height:'32rem'}} src={require('../src/Calendario.png')} />
         
       </View>
       
@@ -41,12 +41,10 @@ export default function Karta() {
           </TouchableOpacity>
           </Link>
 
-          <Link to="/Calendario">
-            <TouchableOpacity style={styles.btnFooter}> 
-              <img id="icon-underline" style={{height:'1.9rem'}} src={require('../src/CalendarIcon.png')} />
-            <Text >Calendário</Text>
-            </TouchableOpacity>
-          </Link>
+          <TouchableOpacity style={styles.btnFooter}>
+          <img  style={{height:'1.8rem'}} src={require('../src/CalendarIcon.png')} />
+          <Text>Calendário</Text>
+          </TouchableOpacity>
       </View>
 
       <StatusBar style="auto" />
@@ -87,18 +85,9 @@ const styles = StyleSheet.create({
   SectionText:{
     alignItems:'center',
     justifyContent:'center',
-    fontWeight:'600',
+    fontWeight:'610',
     color:'#b9ba33',
-    fontSize:'22px',
-  },
-
-  SectionText2:{
-    alignItems:'center',
-    justifyContent:'center',
-    fontWeight:'600',
-    color:'#b9ba33',
-    fontSize:'22px',
-    marginBottom:'14px',
+    fontSize:'22px'
   },
 
   MenuSection:{
@@ -139,16 +128,15 @@ const styles = StyleSheet.create({
     fontWeight: 500,
     paddingTop:'0.2rem',
     justifyContent:'center',
-    alignItems:'center',
+    alignItems:'center'
   },
 
 
   SectionImage:{
+    flex:1,
     justifyContent:'center',
     alignItems:'center',
-    marginLeft:'38rem',
-    marginBottom:'3rem',
-    flex:1,
+    marginBottom:'5rem',
   },
 
 
@@ -162,8 +150,7 @@ const styles = StyleSheet.create({
     right: 0, 
     bottom: 0,
     backgroundColor: '#fff',
-    position:'fixed',
-    textDecorationLine:'none',
+    position:'fixed'
   }, 
 
   btnFooter: {
@@ -175,7 +162,6 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     backgroundColor: '#dedede',
-    textDecorationLine:'none',
   },
 
   btnFooterActive: {
