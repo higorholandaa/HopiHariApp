@@ -3,6 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import {Link} from 'react-router-dom';
 import css from '../index.css';
+import Header from './Header';
+import Footer from './Footer';
 
 
 
@@ -10,9 +12,7 @@ import css from '../index.css';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.Header}>
-      <img  style={{height:'4rem'}} src={require('../img/logo.png')} />
-      </View>
+      <Header></Header>
 
       <View style={styles.Section}>
         <View style={{flexDirection:'row', marginBottom:'1rem'}}>
@@ -40,11 +40,12 @@ export default function App() {
         </View>
 
         <View style={styles.MenuSection}>
+          <Link to="/HopiNiver">
             <TouchableOpacity style={styles.btnMenu}> 
               <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/HopiNiverIcon.png')} />
               <Text style={styles.TextMenu}>Hopi Niver</Text>
             </TouchableOpacity>
-
+          </Link>
             <TouchableOpacity v> 
               <img  style={{height:'3rem' , width:'3rem', marginLeft:'13px'}} src={require('../img/GatronomiaIcon.png')} />
               <Text style={styles.TextMenu}>Gastronomia</Text>
@@ -64,33 +65,8 @@ export default function App() {
         </View>
         
       </View>
-      
-      <View  style={styles.Footer}>
-        <Link to="/Karta">
-          <TouchableOpacity style={styles.btnFooter}>  
-          
-          <img id="icon-underline"  style={{height:'1.9rem'}} src={require('../img/MapsIcon.png')} />
 
-          <Text>Karta</Text>
-          </TouchableOpacity>
-          </Link>
-          
-          
-          <Link to="/App">
-          <TouchableOpacity style={styles.btnFooterActive}>
-            <img  style={{height:'2rem'}} src={require('../img/HomeIcon.png')} />
-            <Text style={{color:'#fff'}}>Home</Text>
-          </TouchableOpacity>
-          </Link>
-          
-          <Link to="/Calendario">
-            <TouchableOpacity style={styles.btnFooter}> 
-              <img id="icon-underline"  style={{height:'1.9rem'}} src={require('../img/CalendarIcon.png')} />
-            <Text>Calendário</Text>
-            </TouchableOpacity>
-          </Link>
-      </View>
-
+        <Footer></Footer>
       <StatusBar style="auto" />
     </View>
   );
@@ -103,16 +79,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#dedede',
   },
 
-  Header:{
-    backgroundColor:'#b9ba33',
-    flex: 0.30,
-    borderBottomEndRadius: '80rem',
-    borderEndRadius: '80rem',
-    borderBottomStartRadius: '2rem',
-    justifyContent:'center',
-    alignItems:'center'
-  },
-
   textTitle:{
     fontSize: 14,
     fontWeight: 600,
@@ -122,7 +88,6 @@ const styles = StyleSheet.create({
   Section:{
     justifyContent:'center',
     alignItems:'center',
-    marginTop:'1.2rem',
     backgroundColor:'#fff',
     borderRadius:'2rem',
     width:'22rem',
@@ -131,7 +96,6 @@ const styles = StyleSheet.create({
   },
 
   MenuSection:{
-    marginTop:'0.6rem',
     flexDirection:'row',
     alignItems:'center'
   },
@@ -180,39 +144,4 @@ const styles = StyleSheet.create({
     height:'8rem',
     marginLeft:'0.7rem',
   },
-
-
-  Footer:{
-    borderTopEndRadius:60,
-    borderTopStartRadius:60,
-    justifyContent:'center',
-    flexDirection:'row',
-    position: 'absolute',
-    left: 0, 
-    right: 0, 
-    bottom: 0,
-    backgroundColor: '#fff',
-  }, 
-
-  btnFooter: {
-    marginVertical:'0.6rem',
-    marginHorizontal: '1rem',
-    height:'5rem',
-    width: '5rem',
-    borderRadius:90,
-    justifyContent:'center',
-    alignItems:'center',
-    backgroundColor: '#dedede',
-  },
-
-  btnFooterActive: {
-    marginVertical:'0.6rem',
-    marginHorizontal: '1rem',
-    backgroundColor: '#b9ba33',
-    height:'5rem',
-    width: '5rem',
-    borderRadius:90,
-    justifyContent:'center',
-    alignItems:'center',
-  }
 });
