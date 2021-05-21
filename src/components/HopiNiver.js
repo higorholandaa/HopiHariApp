@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import {Link} from 'react-router-dom';
-import css from '../index.css';
+// import css from '../index.css';
 import Header from './Header';
 import Footer from './Footer';
 
