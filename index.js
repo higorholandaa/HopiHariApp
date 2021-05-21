@@ -1,8 +1,8 @@
 import { registerRootComponent } from 'expo';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Karta from './src/Karta';
+import App from './src/components/App';
+import Karta from './src/components/Karta';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Karta from   './Karta';
 
