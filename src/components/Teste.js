@@ -2,56 +2,32 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import {Link} from 'react-router-dom';
+import css from '../index.css';
 
 
 
 
-export default function Karta() {
+export default function App() {
   return (
     <View style={styles.container}>
-      
-
-      {/* <View style={styles.Section}>
-        <Text style={styles.SectionText}>CONFIRA O MAPA DO</Text>
-        <Text style={styles.SectionText2}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        
-      </View> */}
-
-      <View style={styles.SectionImage}>
-        <img  style={{height:'41.8rem'}} src={require('../img/karta.jpg')} />
-        
+      <View style={styles.Header}>
+      <img  style={{height:'4rem'}} src={require('../img/logo.png')} />
       </View>
-      
-      <View  style={styles.Footer}>
-        <Link to="/Karta">
-          <TouchableOpacity style={styles.btnFooter}>  
-          
-          <img id="icon-underline"  style={{height:'1.9rem'}} src={require('../img/MapsIcon.png')} />
- 
-          <Text>Karta</Text>
-          </TouchableOpacity>
-          </Link>
-          
-          
 
-          <Link to="/App">
-          <TouchableOpacity style={styles.btnFooterActive}>
-            <img  style={{height:'2rem'}} src={require('../img/HomeIcon.png')} />
-            <Text style={{color:'#fff'}}>Home</Text>
+      <View style={styles.Section}>
+        <View style={{flexDirection:'row', marginBottom:'1rem'}}>
+          <img  style={{height:'2.5rem'}} src={require('../img/TicketIcon.png')} />
+          <Text style={styles.textComprar}> COMPRE SEU {'\n'} PASSAPORTE!</Text>
+          <TouchableOpacity style={styles.btnComprar}> 
+            <Text style={styles.textBtnComprar}>COMPRAR</Text>
           </TouchableOpacity>
-          </Link>
-
-          <Link to="/Calendario">
-            <TouchableOpacity style={styles.btnFooter}> 
-              <img id="icon-underline" style={{height:'1.9rem'}} src={require('../img/CalendarIcon.png')} />
-            <Text >Calendário</Text>
-            </TouchableOpacity>
-          </Link>
+        </View>
+       
       </View>
 
       <StatusBar style="auto" />
     </View>
-  );z
+  );
 }
 
 
@@ -63,7 +39,7 @@ const styles = StyleSheet.create({
 
   Header:{
     backgroundColor:'#b9ba33',
-    flex: 0.48,
+    flex: 0.30,
     borderBottomEndRadius: '80rem',
     borderEndRadius: '80rem',
     borderBottomStartRadius: '2rem',
@@ -80,25 +56,12 @@ const styles = StyleSheet.create({
   Section:{
     justifyContent:'center',
     alignItems:'center',
-    marginTop:'1.5rem',
-    // backgroundColor:'#fff',
-  },
-
-  SectionText:{
-    alignItems:'center',
-    justifyContent:'center',
-    fontWeight:'600',
-    color:'#b9ba33',
-    fontSize:'22px',
-  },
-
-  SectionText2:{
-    alignItems:'center',
-    justifyContent:'center',
-    fontWeight:'600',
-    color:'#b9ba33',
-    fontSize:'22px',
-    marginBottom:'14px',
+    marginTop:'1.2rem',
+    backgroundColor:'#fff',
+    borderRadius:'2rem',
+    width:'22rem',
+    height:'16rem',
+    marginLeft:'0.7rem',
   },
 
   MenuSection:{
@@ -139,16 +102,17 @@ const styles = StyleSheet.create({
     fontWeight: 500,
     paddingTop:'0.2rem',
     justifyContent:'center',
-    alignItems:'center',
+    alignItems:'center'
   },
 
 
   SectionImage:{
     justifyContent:'center',
     alignItems:'center',
-    marginLeft:'38rem',
-    marginBottom:'3rem',
-    flex:1,
+    marginTop:'1.5rem',
+    borderRadius:'2rem',
+    height:'8rem',
+    marginLeft:'0.7rem',
   },
 
 
@@ -162,8 +126,6 @@ const styles = StyleSheet.create({
     right: 0, 
     bottom: 0,
     backgroundColor: '#fff',
-    position:'fixed',
-    textDecorationLine:'none',
   }, 
 
   btnFooter: {
@@ -175,7 +137,6 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     backgroundColor: '#dedede',
-    textDecorationLine:'none',
   },
 
   btnFooterActive: {

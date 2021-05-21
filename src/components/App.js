@@ -82,16 +82,18 @@ export default function App() {
             <Text style={{color:'#fff'}}>Home</Text>
           </TouchableOpacity>
           </Link>
-
-          <TouchableOpacity style={styles.btnFooter}>
-          <img  style={{height:'1.8rem'}} src={require('../img/CalendarIcon.png')} />
-          <Text>Calendário</Text>
-          </TouchableOpacity>
+          
+          <Link to="/Calendario">
+            <TouchableOpacity style={styles.btnFooter}> 
+              <img id="icon-underline"  style={{height:'1.9rem'}} src={require('../img/CalendarIcon.png')} />
+            <Text>Calendário</Text>
+            </TouchableOpacity>
+          </Link>
       </View>
 
       <StatusBar style="auto" />
     </View>
-  );z
+  );
 }
 
 
@@ -103,7 +105,7 @@ const styles = StyleSheet.create({
 
   Header:{
     backgroundColor:'#b9ba33',
-    flex: 0.48,
+    flex: 0.30,
     borderBottomEndRadius: '80rem',
     borderEndRadius: '80rem',
     borderBottomStartRadius: '2rem',
