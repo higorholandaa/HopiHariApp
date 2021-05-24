@@ -1,9 +1,9 @@
  import React from 'react';
- import { Container } from 'react-bootstrap';
+//  import { Container } from 'react-bootstrap';
  import CssInfantis from '../AtracoesInfantis.css';
  import CriancaFoto from '../img/Konfronti.jpg';
- import Row from 'react-bootstrap/Row';
- import Col from 'react-bootstrap/Col';
+//  import Row from 'react-bootstrap/Row';
+//  import Col from 'react-bootstrap/Col';
  import Atracoescss from '../AtracoesInfantis.css'
 
 
@@ -23,3 +23,5 @@
         </div>
      )
  }
+
+
