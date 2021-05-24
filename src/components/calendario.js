@@ -18,20 +18,6 @@ export default function Calendario() {
       <View style={styles.Section}>
         <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
         <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
-        <Text style={styles.SectionText}>CONFIRA O CALENDÁRIO DO</Text>
-        <Text style={styles.SectionText}> PAÍS MAIS DIVETIDO DO MUNDO!</Text>
 
 
         <View style={styles.SectionImage}>
