@@ -15,17 +15,12 @@ export default function AtracoesInfantis(){
 <>
 <View style={styles.container}>
       <Header></Header>
-
       <View style={styles.Section}>
-         
         <Card></Card>
         <Card></Card>
         <Card></Card>
-        
-        
-        
-        
-
+        <Card></Card>
+        <Card></Card>
         <View style={styles.SectionImage}>
         
       </View>
