@@ -1,33 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import {Link} from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Card from './Card'
 
-
-
 export default function AtracoesInfantis(){
     return(
 
-
 <>
-<View style={styles.container}>
+  <View style={styles.container}>
       <Header></Header>
-      <View style={styles.Section}>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <View style={styles.SectionImage}>
-        
-      </View>
-        
-      </View>
-
-      
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       <Footer></Footer>
 
       <StatusBar style="auto" />
