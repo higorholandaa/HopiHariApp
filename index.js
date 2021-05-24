@@ -7,6 +7,7 @@ import Calendario from './src/components/calendario';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Teste from './src/components/Teste';
 import HopiNiver from './src/components/HopiNiver';
+import AtracoesInfantis from './src/components/AtracoesInfantis';
 
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
                   { <Route exact path="/Karta" component={Karta}/> }
                   { <Route exact path="/HopiNiver" component={HopiNiver}/> }
                   { <Route exact path="/App" component={App}/> }
+                  { <Route exact path="/AtracoesInfantis" component={AtracoesInfantis}/> }
                   <App></App>
               </Switch>
       </Router>

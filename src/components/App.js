@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Carousel } from 'react-native';
 import {Link} from 'react-router-dom';
-// import css from '../index.css';
+import css from '../index.css';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -59,7 +59,7 @@ export default function App() {
           </View>
           
         </View>
-
+        
         <View style={styles.SectionImage}>
           <View>
             <img  style={{height:'9.3rem', borderRadius:'2rem'}} src={require('../img/CriançaGratis.jpg')} />
@@ -147,6 +147,5 @@ const styles = StyleSheet.create({
     marginTop:'1.5rem',
     borderRadius:'2rem',
     height:'8rem',
-    marginLeft:'0.7rem',
   },
 });

@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
     borderBottomStartRadius: '2rem',
     justifyContent:'center',
     alignItems:'center',
-    position:'absolute',
   },
 
   
