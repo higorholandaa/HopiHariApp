@@ -24,11 +24,12 @@ export default function App() {
             </TouchableOpacity>
           </View>
           <View style={styles.MenuSection}>
+              <Link to="/AtracoesInfantis">
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem', width:'3rem'}} src={require('../img/AtracoesIcon.png')} />
                 <Text style={styles.TextMenu}>Atrações</Text>
               </TouchableOpacity>
-
+              </Link>
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/ServiceIcon.png')} />
                 <Text style={styles.TextMenu}>Serviços</Text>
