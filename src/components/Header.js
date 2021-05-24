@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
 
   Header:{
-    position:'fixed',
+    // position:'fixed',
     width:'100%',
     height:'6rem',
     backgroundColor:'#b9ba33',

@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 
   Section:{
     alignItems:'center',
-    marginTop:'7rem',
+    marginTop:'1.3rem',
     backgroundColor:'#fff',
     borderRadius:'2rem',
     width:'22rem',
