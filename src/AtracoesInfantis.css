@@ -7,19 +7,20 @@
     margin-bottom: 2%;
 } */
 #Foto-fit{
-    width: 18rem;
-    height: 9rem;
+    width: 22rem;
+    height: 11rem;
     margin-top: 2%;
     margin-bottom: 2%;
     justify-content: center;
     align-items: center;
 }
 #text-fit{
-    margin-left: 23%;
-    margin-top: 4%;
+    margin-left: 15%;
+    font-weight: bold;
+    margin-top: 2%;
 }
-/* #cont-fit{
+#cont-fit{
     background-color: #f1efef;
-    margin-top: 3%;
     border-radius: 10% 10% 0 0;
-} */
+    width: 100%;
+}

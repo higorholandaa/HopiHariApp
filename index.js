@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Teste from './src/components/Teste';
 import HopiNiver from './src/components/HopiNiver';
 import AtracoesInfantis from './src/components/AtracoesInfantis';
+import Servicos from './src/components/Servicos';
 
 
 ReactDOM.render(
@@ -20,6 +21,7 @@ ReactDOM.render(
                   { <Route exact path="/HopiNiver" component={HopiNiver}/> }
                   { <Route exact path="/App" component={App}/> }
                   { <Route exact path="/AtracoesInfantis" component={AtracoesInfantis}/> }
+                  { <Route exact path="/Servicos" component={Servicos}/> }
                   <App></App>
               </Switch>
       </Router>
