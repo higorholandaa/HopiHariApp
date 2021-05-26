@@ -9,6 +9,8 @@ import Teste from './src/components/Teste';
 import HopiNiver from './src/components/HopiNiver';
 import AtracoesInfantis from './src/components/AtracoesInfantis';
 import Servicos from './src/components/Servicos';
+import Duvidas from './src/components/Duvidas';
+
 
 
 ReactDOM.render(
@@ -22,6 +24,7 @@ ReactDOM.render(
                   { <Route exact path="/App" component={App}/> }
                   { <Route exact path="/AtracoesInfantis" component={AtracoesInfantis}/> }
                   { <Route exact path="/Servicos" component={Servicos}/> }
+                  { <Route exact path="/Duvidas" component={Duvidas}/> }
                   <App></App>
               </Switch>
       </Router>

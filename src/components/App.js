@@ -30,10 +30,12 @@ export default function App() {
                 <Text style={styles.TextMenu}>Atrações</Text>
               </TouchableOpacity>
               </Link>
+              <Link to="/servicos">
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/ServiceIcon.png')} />
                 <Text style={styles.TextMenu}>Serviços</Text>
               </TouchableOpacity>
+              </Link>
 
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/DuvidaIcon.png')} />
