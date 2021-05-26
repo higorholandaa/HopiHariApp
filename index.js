@@ -10,6 +10,7 @@ import HopiNiver from './src/components/HopiNiver';
 import AtracoesInfantis from './src/components/AtracoesInfantis';
 import Servicos from './src/components/Servicos';
 import Duvidas from './src/components/Duvidas';
+import Gastronomia from './src/components/Gastronomia';
 
 
 
@@ -25,6 +26,7 @@ ReactDOM.render(
                   { <Route exact path="/AtracoesInfantis" component={AtracoesInfantis}/> }
                   { <Route exact path="/Servicos" component={Servicos}/> }
                   { <Route exact path="/Duvidas" component={Duvidas}/> }
+                  { <Route exact path="/Gastronomia" component={Gastronomia}/> }
                   <App></App>
               </Switch>
       </Router>

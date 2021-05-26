@@ -50,15 +50,19 @@ export default function App() {
                 <Text style={styles.TextMenu}>Hopi Niver</Text>
               </TouchableOpacity>
             </Link>
-              <TouchableOpacity v> 
+
+            <Link to="/Gastronomia">
+              <TouchableOpacity > 
                 <img  style={{height:'3rem' , width:'3rem', marginLeft:'13px'}} src={require('../img/GatronomiaIcon.png')} />
                 <Text style={styles.TextMenu}>Gastronomia</Text>
               </TouchableOpacity>
+            </Link>  
               
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/LocationIcon.png')} />
                 <Text style={styles.TextMenu}>Localização</Text>
               </TouchableOpacity>
+
           </View>
           
         </View>
