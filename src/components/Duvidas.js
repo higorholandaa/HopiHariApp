@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 // import css from '../index.css';
 import Header from './Header';
 import Footer from './Footer';
-
+import Button from './Button';
 
 export default function Duvidas() {
   return (
@@ -14,7 +14,7 @@ export default function Duvidas() {
       
         <View style={styles.Sectionteste1}>
             <View style={styles.Section}>
-              aa
+                  dghksdcgmdjk
             </View>
             <View style={styles.Sectionteste}>
                 
