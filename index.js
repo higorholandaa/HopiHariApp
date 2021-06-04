@@ -11,7 +11,7 @@ import AtracoesInfantis from './src/components/AtracoesInfantis';
 import Servicos from './src/components/Servicos';
 import Duvidas from './src/components/Duvidas';
 import Gastronomia from './src/components/Gastronomia';
-
+import Login from './src/components/Login';
 
 
 ReactDOM.render(
@@ -27,6 +27,8 @@ ReactDOM.render(
                   { <Route exact path="/Servicos" component={Servicos}/> }
                   { <Route exact path="/Duvidas" component={Duvidas}/> }
                   { <Route exact path="/Gastronomia" component={Gastronomia}/> }
+                  { <Route exact path="/Login" component={Login}/> }
+
                   <App></App>
               </Switch>
       </Router>

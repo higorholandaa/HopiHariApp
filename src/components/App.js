@@ -58,11 +58,12 @@ export default function App() {
                 <Text style={styles.TextMenu}>Gastronomia</Text>
               </TouchableOpacity>
             </Link>  
-              
+              <Link to="/Localizacao">
               <TouchableOpacity style={styles.btnMenu}> 
                 <img  style={{height:'3rem' , width:'3rem'}} src={require('../img/LocationIcon.png')} />
                 <Text style={styles.TextMenu}>Localização</Text>
               </TouchableOpacity>
+              </Link>
 
           </View>
           
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
   },
 
   btnComprar:{
-    backgroundColor:'#246855',
+    backgroundColor:'#adde43',
     borderRadius: 7,
   },
 

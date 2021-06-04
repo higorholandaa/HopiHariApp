@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   btnFooterActive: {
     marginVertical:'0.6rem',
     marginHorizontal: '1rem',
-    backgroundColor: '#b9ba33',
+    backgroundColor: '#adde43',
     height:'5rem',
     width: '5rem',
     borderRadius:90,

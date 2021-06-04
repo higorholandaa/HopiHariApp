@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   TextSectionAzul:{
     justifyContent:'center',
     alignItems:'center',
-    fontSize:16,
+    fontSize:'16',
     color:'#0000ff',
     fontWeight:600,
     textAlign:'center',

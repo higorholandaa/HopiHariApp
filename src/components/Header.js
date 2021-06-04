@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     // position:'fixed',
     width:'100%',
     height:'6rem',
-    backgroundColor:'#b9ba33',
+    backgroundColor:'#adde43',
     borderBottomEndRadius: '80rem',
     borderEndRadius: '80rem',
     borderBottomStartRadius: '2rem',
